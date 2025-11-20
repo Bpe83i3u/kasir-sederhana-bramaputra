@@ -1,63 +1,96 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* gradasi pastel */
+  color: #333;
 }
 
 h1 {
   text-align: center;
+  color: #4a148c; /* ungu tua */
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .form-container, .summary {
-  background: white;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: #fff3e0; /* krem lembut */
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 label {
   display: block;
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #bf360c; /* coklat oranye */
 }
 
 input {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 10px;
+  margin-top: 6px;
+  border: 2px solid #ff7043;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background: #1976d2;
-  color: white;
+  margin-top: 18px;
+  padding: 12px 18px;
+  background: #4a148c; /* ungu */
+  color: #fff;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: #0d47a1;
+  background: #6a1b9a;
+  transform: scale(1.05);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: #fce4ec; /* pink lembut */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-table th, table td {
+table th {
+  background: #ad1457; /* pink tua */
+  color: #fff;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+table td {
   padding: 10px;
-  border: 1px solid #ddd;
   text-align: center;
+  border-bottom: 1px solid #e1bee7;
+}
+
+.summary p, .summary h2 {
+  margin: 12px 0;
+  color: #4a148c;
 }
 
 .delete-btn {
-  background: #d32f2f;
-  padding: 5px 10px;
-  border-radius: 4px;
+  background: #e53935;
+  padding: 6px 12px;
+  border-radius: 6px;
   color: white;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #b71c1c;
 }
